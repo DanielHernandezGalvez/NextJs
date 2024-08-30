@@ -5,13 +5,19 @@ import numpy as np
 historia = [8, 7, 5, 8, 5, 4, 3, 5, 6, 7, 8, 10, 9, 4.7, 7, 8, 6, 9, 7, 6]
 english = [8, 9, 10, 7, 9, 10, 9, 8, 7, 8, 9, 9, 8, 9, 9, 10, 9, 9, 8, 7]
 
+datos_ordenados2 = np.sort(english)
 media_historia = statistics.mean(historia)
 mediana_historia = statistics.median(historia)
 moda_historia = statistics.mode(historia)
 datos_ordenados = np.sort(historia)
-datos_ordenados2 = np.sort(english)
 varianza_historia = statistics.pvariance(historia)
 desviacion_estandar = statistics.pstdev(historia)  # O también: desviacion_estandar = varianza**0.5
+media_english = statistics.mean(english)
+mediana_english = statistics.median(english)
+moda_english = statistics.mode(english)
+datos_ordenados2 = np.sort(english)
+varianza_english = statistics.pvariance(english)
+desviacion_estandar2 = statistics.pstdev(english)  # O también: desviacion_estandar = varianza**0.5
 
 
 
@@ -46,10 +52,16 @@ rango2 = valor_maximo2 - valor_minimo2
 
 def historia():
     print("media",media_historia, " mediana", mediana_historia, "moda", moda_historia, "varianza", 
-          varianza_historia, "media recortada al 5%", media_recortada, "desviacion estandar", desviacion_estandar)
+          varianza_historia, "media recortada al 5%", media_recortada, "desviacion estandar", 
+          desviacion_estandar, "rango", rango)
 
-
+def english():
+    print("media",media_english, " mediana", mediana_english, "moda", moda_historia, "varianza", 
+          varianza_english, "media recortada al 5%", media_english, "desviacion estandar", 
+          desviacion_estandar2, "rango", rango)
+    
 historia()
+english()
 """ 
 La varianza de una poblacion de N mediciones es es promedio de los cuadrados 
 de las desviaciones de las mediciones alrededor de su media m. La varoanza
