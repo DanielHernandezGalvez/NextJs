@@ -11,13 +11,18 @@ mediana_historia = statistics.median(historia)
 moda_historia = statistics.mode(historia)
 datos_ordenados = np.sort(historia)
 varianza_historia = statistics.pvariance(historia)
-desviacion_estandar = statistics.pstdev(historia)  # O también: desviacion_estandar = varianza**0.5
+desviacion_estandar = statistics.pstdev(historia)  
 media_english = statistics.mean(english)
 mediana_english = statistics.median(english)
 moda_english = statistics.mode(english)
 datos_ordenados2 = np.sort(english)
+""" 
+La varianza de una poblacion de N mediciones es es promedio de los cuadrados 
+de las desviaciones de las mediciones alrededor de su media m. La varoanza
+poblacional se detona con σ cuadrada.
+"""
 varianza_english = statistics.pvariance(english)
-desviacion_estandar2 = statistics.pstdev(english)  # O también: desviacion_estandar = varianza**0.5
+desviacion_estandar2 = statistics.pstdev(english)  
 
 
 
@@ -62,8 +67,3 @@ def english():
     
 historia()
 english()
-""" 
-La varianza de una poblacion de N mediciones es es promedio de los cuadrados 
-de las desviaciones de las mediciones alrededor de su media m. La varoanza
-poblacional se detona con σ cuadrada.
-"""
