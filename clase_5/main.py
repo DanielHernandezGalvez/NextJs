@@ -23,8 +23,6 @@ poblacional se detona con σ cuadrada.
 varianza_english = statistics.pvariance(english)
 desviacion_estandar2 = statistics.pstdev(english)  
 
-
-
 # Calcula el número de datos a eliminar (5% de los datos) aqdIDhbbMmmesFuG
 n = len(historia)
 p = 0.05
