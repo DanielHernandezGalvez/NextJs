@@ -2,7 +2,6 @@ import statistics
 import numpy as np
 
 
-historia = [8, 7, 5, 8, 5, 4, 3, 5, 6, 7, 8, 10, 9, 4.7, 7, 8, 6, 9, 7, 6]
 english = [8, 9, 10, 7, 9, 10, 9, 8, 7, 8, 9, 9, 8, 9, 9, 10, 9, 9, 8, 7]
 
 datos_ordenados2 = np.sort(english)
