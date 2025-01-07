@@ -1,0 +1,61 @@
+import {
+  CreditCard,
+  Earth,
+  Landmark,
+  LayoutList,
+  Lock,
+  Settings,
+  Star,
+  UserPen,
+} from "lucide-react";
+
+export const dataSideBarElements = [
+  {
+    title: "Elements",
+    icon: LayoutList,
+    Children: [
+      {
+        item: "Favorites",
+        href: "/favorites",
+        icon: Star,
+      },
+      {
+        item: "Logins",
+        href: "/logins-elements",
+        icon: Earth,
+      },
+      {
+        item: "Credit Card",
+        href: "/credit-card",
+        icon: CreditCard,
+      },
+    ],
+  },
+];
+
+export const DataSidebarConfiguration = [
+  {
+    title: "Configurations",
+    icon: Settings,
+    Children: [
+      {
+        item: "Profile",
+        href: "/profile",
+        icon: UserPen,
+        premium: false,
+      },
+      {
+        item: "Security",
+        href: "#",
+        icon: Lock,
+        premium: true,
+      },
+      {
+        item: "Suscription",
+        href: "#",
+        icon: Landmark,
+        premium: true,
+      },
+    ],
+  },
+];

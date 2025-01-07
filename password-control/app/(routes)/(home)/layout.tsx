@@ -1,4 +1,5 @@
 import Logo from '@/components/Shared/Logo/Logo'
+import SideBar from '@/components/Shared/sidebar/SideBar'
 import React from 'react'
 
 export default function LayoutRoutes({
@@ -17,7 +18,7 @@ export default function LayoutRoutes({
         <div className='flex h-full'>
             <div className='max-w-lg hidden lg:flex h-full w-72 flex-col 
             bg-blue-800 px-4 text-white fixed'>
-                <p>Sidebar</p>
+                <SideBar />
             </div>
             <div className='w-full lg:pl-72'>
                 <div className='´p-6'>{children}</div>
