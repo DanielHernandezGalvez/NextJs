@@ -13,7 +13,7 @@ export const dataSideBarElements = [
   {
     title: "Elements",
     icon: LayoutList,
-    Children: [
+    children: [
       {
         item: "Favorites",
         href: "/favorites",
@@ -37,7 +37,7 @@ export const DataSidebarConfiguration = [
   {
     title: "Configurations",
     icon: Settings,
-    Children: [
+    children: [
       {
         item: "Profile",
         href: "/profile",

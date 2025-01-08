@@ -1,5 +1,6 @@
 import Logo from '@/components/Shared/Logo/Logo'
 import SideBar from '@/components/Shared/sidebar/SideBar'
+import SideBarMobile from '@/components/Shared/SideBarMobile/SideBarMobile'
 import React from 'react'
 
 export default function LayoutRoutes({
@@ -13,7 +14,7 @@ export default function LayoutRoutes({
             <div className='py-1 text-white'>
             <Logo />
             </div>
-            <div>Sidebar MObile</div>
+            <SideBarMobile />
         </div>
         <div className='flex h-full'>
             <div className='max-w-lg hidden lg:flex h-full w-72 flex-col 
