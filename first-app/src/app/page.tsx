@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "main",
+  description: "This will be my first SaaS app",
+}
 
 export default function Home() {
   return (
