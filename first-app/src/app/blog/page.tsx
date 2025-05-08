@@ -1,5 +1,6 @@
 import React from 'react'
 import { Metadata } from "next";
+import Header from '../Header';
 
 export const metadata: Metadata = {
   title: "blog",
@@ -8,9 +9,11 @@ export const metadata: Metadata = {
 
 
 export default function page() {
+
+
   return (
-    <div className='bg-red-500 text-center py-3'>
-      <h1 className='text-white'>Blog</h1>
+    <div className=' text-center py-3'>
+      <Header background='bg-red-400' titulo="titulo reutilizable" />
       
     </div>
   )
