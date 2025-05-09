@@ -7,7 +7,7 @@ export const Menu = () => {
             <ul>
                 <li><Link href="/ssr-landing" className='mb-3 p-3 block w-full bg-slate-200 rounded hover:bg-slate-400 hover:text-white '>SSR Server Side Rendering</Link></li>
                 <li><Link href="/csr-password" className='mb-3 p-3 block w-full bg-slate-200 rounded hover:bg-slate-400 hover:text-white '>CSR Client Side Rendering</Link></li>
-                <li><Link href="/" className='mb-3 p-3 block w-full bg-slate-200 rounded hover:bg-slate-400 hover:text-white '>DR Dinamyc rendering</Link></li>
+                <li><Link href="/dr-dynamic" className='mb-3 p-3 block w-full bg-slate-200 rounded hover:bg-slate-400 hover:text-white '>DR Dinamyc rendering</Link></li>
             </ul>
         </menu>
     )

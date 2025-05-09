@@ -51,7 +51,7 @@ const PasswordsPage = () => {
 
     }
 
-    
+
 
     return (
         <div className="bg-slate-100 w-full h-screen flex justify-center items-center">
@@ -109,21 +109,21 @@ const PasswordsPage = () => {
                     onClick={generatePassword}
                 >Generate</button>
 
-              
+
             </div>
 
-              <div className="absolute bottom-5 right-5">
-                    {showToast && (
+            <div className="absolute bottom-5 right-5">
+                {showToast && (
 
-                        <p className="bg-green-400 text-sm text-center text-white rounded p-2 w-full mt-5 flex justify-between gap-5">
-                            <span>Contraseña copiada </span> <svg onClick={e => setShopwToast(false)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                    <p className="bg-green-400 text-sm text-center text-white rounded p-2 w-full mt-5 flex justify-between gap-5">
+                        <span>Contraseña copiada </span> <svg onClick={e => setShopwToast(false)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                             className="size-6 hover:cursor-pointer">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                            </svg>
-                        </p>
-                    )}
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </p>
+                )}
 
-                </div>
+            </div>
 
         </div>
     )
