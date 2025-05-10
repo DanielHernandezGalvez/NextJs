@@ -4,7 +4,7 @@ export interface Characters {
     links: Links;
 }
 
-export interface Item {
+export interface Character {
     id:          number;
     name:        string;
     ki:          string;
