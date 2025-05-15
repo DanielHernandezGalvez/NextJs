@@ -116,7 +116,7 @@ const PasswordsPage = () => {
                 {showToast && (
 
                     <p className="bg-green-400 text-sm text-center text-white rounded p-2 w-full mt-5 flex justify-between gap-5">
-                        <span>Contraseña copiada </span> <svg onClick={e => setShopwToast(false)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        <span>Contraseña copiada </span> <svg onClick={() => setShopwToast(false)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                             className="size-6 hover:cursor-pointer">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                         </svg>

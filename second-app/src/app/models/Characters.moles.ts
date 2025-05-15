@@ -1,5 +1,5 @@
 export interface Characters {
-    items: Item[];
+    items: Character[];
     meta:  Meta;
     links: Links;
 }
@@ -15,6 +15,8 @@ export interface Character {
     image:       string;
     affiliation: Affiliation;
     deletedAt:   null;
+    originPlanet: string;
+
 }
 
 export enum Affiliation {
