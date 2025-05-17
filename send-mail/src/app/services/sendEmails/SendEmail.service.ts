@@ -17,13 +17,21 @@ const transporter = nodemailer.createTransport({
 
 export const sendEmailService = async (body: BodySendMailRequest) => {
 
-const info = await transporter.sendMail({
-    from: process.env.EMAIL_USER,
-    to: body.to,
-    subject: body.subject,
-    text: body.content,
-})
+    try {
+        const info = await transporter.sendMail({
+            from: body.from,
+            to: body.to,
+            subject: body.subject,
+            text: body.content,
+        })
+    return {success: true, message: "Email sent successfully"}
+
+    } catch (error) {
+            return {success: false, message: error}
+
+    }
+
+
     
 
-    return {success: true, message: "Email sent successfully", info}
 }

@@ -19,12 +19,11 @@ export async function POST(request: NextRequest) {
 
     // send email service
     const result = await sendEmailService(body)
-    if (result.success) {
+    if (!result.success) {
     
-        return NextResponse.json({result}, {status: 201})
+        return NextResponse.json(result, {status: 500})
     }
-
-
-    return NextResponse.json({result}, {status: 500})
-
+    
+    
+    return NextResponse.json(result, {status: 201})
 }

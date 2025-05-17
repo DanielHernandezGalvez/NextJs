@@ -2,6 +2,14 @@ import { BodySendMailRequest } from "@/models/bodySendEmailRequest.model";
 
 export const valitdateBodySendMailRequest = (body: BodySendMailRequest) => {
 
+    
+    if (!body.from || body.from.length === 0 ) 
+        {
+            return {
+                isValid: false,
+                message: "from is required",
+            }
+    } else if (body.from.includes("@") === false)
 
     if (!body.to || body.to.length === 0 ) 
         {
@@ -16,6 +24,8 @@ export const valitdateBodySendMailRequest = (body: BodySendMailRequest) => {
                 message: "Email format is invalid",
             }
         }
+
+
 
     if (!body.subject) {
         return {
